@@ -1,0 +1,13 @@
+<p>login works!</p>
+<h1>{{msg}}</h1>
+<!-- interpolation is only for simple texts-->
+<!-- property binding is used for methof signals and complex functions-->
+
+<!-- this is known as property binding--> >
+<img [src]="imageUrl"> 
+<button [disabled]="isDisabled">Submit</button>
+<input type="text" [value] = "username">
+<div [class.active]="isActive"></div>
+<div [style.width.px] = "boxwidth"></div>
+<div [style.background-color]="bgcolor">colored box</div>
+<p [innerText]="`count :` + count()"></p>
