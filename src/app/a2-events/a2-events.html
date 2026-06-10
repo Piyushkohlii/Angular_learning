@@ -1,0 +1,30 @@
+<p>a2-events works!</p>
+
+<!-- 
+Event Binding : using event property like onclick , onscroll by binding the function or method created in the class
+-->
+
+<button (click)="increment()">CLick to add</button>
+
+<!-- <p>Count : {{count()}}</p> this is for normal binding -->
+<p>Count : {{count()}}</p>
+
+<button (click)="showEvent($event)">Show event</button>
+
+<input (input)="updateUser($event.target.value)" type="text">
+
+<p>your name : {{username}}</p> 
+
+<form (submit)="handleSubmit($event)">
+    <input placeholder="email" (input)="maildis($event.target.value)">
+    <button>Submit</button>
+</form>
+
+@if(formsubmitted){
+    <p>your email is : {{email}}</p>
+}
+
+<input (keyup)="onKeyUp($event)" (blur)="onBlur()" (focus)="onFocus()"> 
+
+<div class="mouseEvent" (mouseover)="onHover()" (mouseleave)="onLeave()">Hover Text</div>
+
