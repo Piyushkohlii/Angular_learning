@@ -1,0 +1,13 @@
+<h3>Login form based on signals</h3>
+
+<input type="email"
+placeholder="Email"
+[formField]="loginForm.email">
+
+<input type="password"
+placeholder="Password"
+[formField]="loginForm.password">
+
+<button (click)="submit()"> Submit</button>
+
+<pre>{{loginModel() | json}}</pre>

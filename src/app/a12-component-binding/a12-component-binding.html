@@ -1,0 +1,33 @@
+@if(isLoggedIn()){
+    <p>Welcome user</p>
+}@else{
+    <p>you are not a user</p>
+}
+
+<button (click)="isLoggedIn.set(true)">log in</button>
+<button (click)="isLoggedIn.set(false)">log out</button>
+
+<ul>
+    @for (item of items(); track $index) {
+        <li>{{item}}</li>
+    }
+</ul>
+
+<h1>User Dashboard</h1>
+
+<button (click)="makeUser()">user</button>
+<button (click)="makeAdmin()">Admin</button>
+
+@if(role() === 'admin'){
+    <p>Welcome admin</p>
+}@else{
+    <p>Welcome user</p>
+}
+
+<h3>Available features</h3>
+
+<ul>
+    @for(feature of features(); track feature){
+        <li>{{feature}}</li>
+    }
+</ul>

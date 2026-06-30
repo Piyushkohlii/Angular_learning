@@ -1,0 +1,16 @@
+<input type="text" (input)="updateName($event.target.value)" placeholder="Enter name">
+
+<p>your name : {{name}}</p>
+
+
+<input type="text" placeholder="Enter city" (input)="city=$event.target.value"> 
+<!-- her we did it without any function we directly assign the e target value in the variable -->
+
+<p>your city : {{city}}</p>
+
+<input type="text" #emailInput placeholder="Enter email" > 
+<!-- getting value using template reference variable-->
+
+<button (click)="getEmail(emailInput.value)">get email</button>
+
+<p>your email : {{email}}</p>

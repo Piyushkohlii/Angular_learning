@@ -1,0 +1,9 @@
+<h3>user list</h3>
+
+<p>Total Users: {{ users().length }}</p>
+<ul>
+    @for(user of users() ; track user.id){
+        <li>{{user.name}} -> {{user.email}}</li>
+    }
+</ul>
+{{users}}

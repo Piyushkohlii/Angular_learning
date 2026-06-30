@@ -1,0 +1,30 @@
+<!--
+pipes : it is used to represnt any value into a specific repressentation
+builtin pipes:
+lowercase , uppercase
+date pipe 
+currency pipe
+percentage
+json
+-->
+
+<h1>{{lName | uppercase}}</h1> // here we transformed the name from lowercase to uppercase and viceversa with
+<h1>{{uName | lowercase}}</h1> // the help of pipe
+
+<p>short date " {{today | date : 'short'}}</p>
+<p>full date " {{today | date : 'fullDate'}}</p>
+<p>custom date " {{today | date : 'dd/MM/yyyy'}}</p>
+
+<p>INR : {{amount | currency : 'INR'}}</p>
+<p>USD : {{amount | currency : 'USD'}}</p>
+<p>Custom : {{amount | currency : 'EUR' : 'symbol':'1.0-0'}}</p>
+
+<p>{{per | percent}}</p>
+
+<p>{{user | json}}</p>
+
+<h1>{{fullName | pipeShortName}}</h1>
+
+<h2>{{usd}}</h2>
+
+<h2>{{usd | convertCurrency:usdToInr | currency:'INR'}}</h2>

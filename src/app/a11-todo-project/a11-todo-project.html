@@ -1,0 +1,30 @@
+
+<div class="wrapper">
+<div class="todo-container">
+    <h1>📝 ToDo List</h1>
+
+    <form (submit)="addTodo(); $event.preventDefault()">
+        <input
+            type="text"
+            placeholder="Enter todo..."
+            [value]="newItem()"
+            (input)="newItem.set($any($event.target).value)"
+        >
+
+        <button>Add Todo</button>
+    </form>
+
+    @for(item of todo(); track $index){
+        <div class="todo-item">
+            <div class="left">
+                <input type="checkbox" (click)="onCheck()">
+                <span >{{item}}</span>
+            </div>
+
+            <button class="delete-btn" (click)="onDelete($index)">
+                Delete
+            </button>
+        </div>
+    }
+</div>
+</div>

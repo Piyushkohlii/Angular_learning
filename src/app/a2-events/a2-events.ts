@@ -29,6 +29,7 @@ export class A2Events {
   maildis(em : string){
       this.email = em;
   }
+  
   formsubmitted = false;
   handleSubmit(e : any){
     e.preventDefault();

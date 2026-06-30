@@ -1,0 +1,46 @@
+<h2>Signal</h2>
+
+<!-- <p> value : {{val}}</p> here we just displayed a variable by using interpolation -->
+
+<p> count : {{count()}}</p> <!-- this is how a signal is read just by adding paretnhesis after that-->
+
+<!-- <button (click)="count.set(50)">Change signal</button> -->
+
+<!-- signals are updated with the terms set and update-->
+
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+<button (click)="reset()">reset</button>
+
+<!-- <h2>{{user2().isRich}}</h2> -->
+
+<p>{{numbers()}}</p>
+
+<button (click)="changeArray()">Change array</button>
+
+<button (click)="addValue(34)">add a number</button>
+
+<h1>{{single()}}</h1>
+<h1>{{double()}}</h1>
+<h1>{{triple()}}</h1>
+
+<button (click)="increment2()">+</button>
+
+<h1>{{fullName()}}</h1>
+
+<h1>{{total()}}</h1>
+
+<input type="text"  placeholder="Enter name" [value] = "name2()" (input)="name2.set($event.target.value)">
+
+<p>{{name2()}}</p>
+
+<!-- <input type="text" [value]="user2().name" (input)="user2().name.set($event.target.value)"> -->
+<!-- we cant do this because the name key is a variable not a signal so we have to declare a method in ts  -->
+
+<input type="text" placeholder="Enter name" [value] = "name2()" (input)="updateName($event.target.value)">
+
+<p>{{user2().name}}</p>
+
+<p>{{user2().age}}</p>
+
+<button (click)="updateAge()">age + </button>

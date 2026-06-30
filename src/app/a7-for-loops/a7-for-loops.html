@@ -1,0 +1,53 @@
+@for (item of items; track $index) {
+    <p>{{item}}</p>
+}
+
+@for(item of user;track item){
+    <div>
+        <h3>{{item.name}}</h3>
+        <p>age : {{item.age}}</p>
+    </div>
+}
+
+@for(f of fruits; track f;let i = $index){
+    <p>{{f}}</p>
+    <button (click)="onDelete(i)">delete</button>
+}
+
+<!-- 
+for loop contextual variables
+$index : index
+$count : total number of elment in an array
+$first : first element
+$last : last element
+$even/$odd : Row styling
+-->
+
+@for(l of languages;track l; let c = $count){
+    <p>{{$index}}->{{l}}</p>
+    <p>total count : {{c}}</p> <!--we cannot acces this count autside of the loop -->
+    <!-- <p> first item : {{$first}}</p> it only shows true or false for a element -->
+}
+
+
+<!-- @for(l of languages;track l){
+    @if($first){
+        <p>first item : {{l}}</p>
+    }@else{
+        <p>{{l}}</p>
+    }
+}
+
+@for(l of languages;track l){
+    @if($last){
+        <p>last item : {{l}}</p>
+    }@else{
+        <p>{{l}}</p>
+    }
+} -->
+
+@for(l of languages;track $index){
+    <p [style.background]= "$odd ? 'red' : 'yellow'">
+        {{l}}
+    </p>
+}

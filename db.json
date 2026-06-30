@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "name": "Piyush Kuma",
+      "email": "piyush.kumar@example.com",
+      "id": "1"
+    },
+    {
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Ananya Singh",
+      "email": "ananya.singh@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Rohit Verma",
+      "email": "rohit.verma@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Priya Gupta",
+      "email": "priya.gupta@example.com"
+    },
+    {
+      "name": "Piyush",
+      "email": "piiussh@gmail.com",
+      "id": "3jVib3Cr1Cs"
+    },
+    {
+      "name": "sadasd",
+      "email": "fewefe",
+      "id": "usZnmm8x1oE"
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": "8BX8-JhBdxU"
+    },
+    {
+      "name": "fqqfw",
+      "email": "fwqfwq",
+      "id": "4c4XL9DLRFA"
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": "o8NYl5Y3XhE"
+    },
+    {
+      "name": "gfdg",
+      "email": "gfdf",
+      "id": "_AWcajF0WgA"
+    },
+    {
+      "name": "",
+      "email": "",
+      "id": "5_zUdv4N5O8"
+    },
+    {
+      "name": "asccs",
+      "email": "cassca",
+      "id": "2Krog79Wn8g"
+    },
+    {
+      "name": "Piyush Kuma",
+      "email": "piyush.kumar@example.com",
+      "id": "1ejk0hDfr0s"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

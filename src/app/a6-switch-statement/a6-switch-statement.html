@@ -1,0 +1,31 @@
+<h1>Workout Schedule</h1>
+
+<input type="text" #dayInput placeholder="Enter day">
+
+<button (click)="showWorkout(dayInput.value)">
+    Show Workout
+</button>
+
+@switch(searchedDay){
+    @case("monday" ){
+        <p>Chest and Back</p>
+    }
+    @case("tuesday"){
+        <p>Shoulder and arms</p>
+    }
+    @case("wednesday"){
+        <p>legs and traps</p>
+    }
+    @case("thrusday"){
+        <p>Chest and Back</p>
+    }
+    @case("friday"){
+        <p>Shoulders and arms</p>
+    }
+    @case("saturday"){
+        <p>legs and traps</p>
+    }
+    @case("sunday"){
+        <p>rest</p>
+    }
+}

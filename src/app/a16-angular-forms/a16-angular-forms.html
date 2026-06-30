@@ -1,0 +1,14 @@
+<h2> SIgnal Reactive form</h2>
+
+<form [formGroup]="form">
+    <input formControlName="name" placeholder="Enter name">
+    <br><br>
+    <input formControlName="email" placeholder="Enter email">
+    <br><br>
+    <button (click)="submitForm()">Submit</button>
+</form>
+
+<p>Signal value:</p>
+<pre>{{user() | json}}</pre>
+
+
